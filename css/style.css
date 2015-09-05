@@ -1,0 +1,183 @@
+.boardBox {
+    height: 200px;
+    width: 1200px;
+    position: relative;
+    margin: 50px auto 10px auto;
+}
+
+.house {
+    height: 200px;
+    width: 150px;
+    margin: 0px 0px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.hole {
+    float: left;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin: 0px 0px;
+}
+
+.topContainer {
+    float: left;
+    width: 100%;
+}
+
+.middleContainer {
+    /*width: 500px;*/
+    
+    float: left;
+}
+
+.bottomContainer {
+    clear: both;
+}
+
+.leftHouse {
+    float: left;
+    background-color: #acd344;
+    background-image: url('../images/images.jpg');
+    background-position: 0px -126px;
+    height: 100px;
+    width: 75px;
+}
+
+.rightHouse {
+    float: left;
+    background-color: #acd344;
+    background-image: url('../images/images.jpg');
+    background-position: 75px -126px;
+    height: 100px;
+    width: 75px;
+}
+
+.bottomHole {
+    background-color: #ff0000;
+    background-image: url('../images/images.jpg');
+    background-position: -70px -128px;
+    height: 50px;
+    width: 45px;
+}
+
+.topHole {
+    background-color: #ff0000;
+    background-image: url('../images/images.jpg');
+    background-position: -70px -128px;
+    height: 50px;
+    width: 45px;
+}
+
+.disablePlayer {
+    cursor: not-allowed;
+    /* z-index: -110; */
+    
+    pointer-events: none;
+}
+
+.messageBoard,
+.statBox {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    margin: auto auto;
+    text-align: center;
+    font-family: cursive;
+    font-size: 30px;
+}
+
+body {
+    background-image: url('../images/board4.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+//ANIMATION
+@font-face {
+    font-family: 'PressStart';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Press Start 2P'), local('PressStart2P-Regular'), url(http://themes.googleusercontent.com/static/fonts/pressstart2p/v2/8Lg6LX8-ntOHUQnvQ0E7o3dD2UuwsmbX3BOp4SL_VwM.woff) format('woff');
+}
+
+.activePlayerTextGreen {
+    color: #BA01FF;
+    float: left;
+    font-family: PressStart;
+    font-size: 2em;
+}
+
+.activePlayerTextViolet {
+    color: #BA01FF;
+    float: left;
+    font-family: PressStart;
+    font-size: 2em;
+}
+
+@-webkit-keyframes neon4 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #B6FF00, 0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00;
+    }
+}
+
+@keyframes neon4 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #B6FF00, 0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00;
+    }
+}
+
+@-moz-keyframes neon4 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #B6FF00, 0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00;
+    }
+}
+
+.activePlayerGlowGreen {
+    -webkit-animation: neon4 0.5s ease-in-out infinite alternate;
+    -moz-animation: neon4 0.5s ease-in-out infinite alternate;
+    animation: neon4 0.5s ease-in-out infinite alternate;
+}
+
+.activePlayerGlowViolet {
+    -webkit-animation: neon6 0.5s ease-in-out infinite alternate;
+    -moz-animation: neon6 0.5s ease-in-out infinite alternate;
+    animation: neon6 0.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes neon6 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+    }
+}
+
+@-moz-keyframes neon6 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+    }
+}
+
+@keyframes neon6 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+    }
+}
